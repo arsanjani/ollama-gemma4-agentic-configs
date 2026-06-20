@@ -1,6 +1,7 @@
 ## Gemma 4 31B Custom Configuration for Cline / Kilo Code
 
 ## 1. Executive Summary
+
 When running Gemma 4 31B locally via Ollama, integration conflicts occur naturally with agentic IDE extensions like Cline or Kilo Code. These errors stem from architectural changes native to Gemma 4, specifically its internal streaming <thought> reasoning blocks and its custom call:tool_name{} function syntax. This report compiles the diagnostic steps and custom configurations required to make Gemma 4 31B perfectly compatible with Cline's strict XML tool boundaries on Windows systems.
 ------------------------------
 ## 2. Core Operational Conflicts## A. Format and Schema Deviations
